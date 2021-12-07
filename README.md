@@ -113,7 +113,7 @@ rosrun rqt_reconfigure rqt_reconfigure (<i>on remote pc</i>)
 
 Extrinsic Camera Calibration launch file basically runs two source code named <b> image_compensation.py  </b> and <b> image_projection.py </b>
 
-* ### Image Compensation
+* #### Image Compensation
 
 Image Compensation is a step to scale the image brightness contrast of com-
 pressed image according to the <b> clip_hist_percent </b> parameter we define. To see only the effect of this parameter, <b> camera/image_compensated </b> topic should be chosen in rqt image view.  
@@ -122,7 +122,7 @@ Between <b> 90.- 115. lines in image_compensation.py  </b>, using this parameter
 
 As a result, the image gets brighter and has less contrast with a higher clip_hist_percent value.
 
-* ### Image Projection
+* #### Image Projection
 
 Image Projection is the step to project the image using Homography Matrix to obtain a better view for lanes where the camera of the robot look straight as default and we need a view from top. So we bascially extract better ROI as an output (projected) image at this step. As known, 3x3 Homography Matrix is the transformation matrix between the planes having same dimensions.
 
