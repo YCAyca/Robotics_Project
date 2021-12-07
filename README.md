@@ -269,4 +269,7 @@ The task of the control_lane.py is to publish velocity to the Turtlebot3 using c
 
 ## Demo Video
 
-<video src="https://user-images.githubusercontent.com/20625822/145048554-58cab438-4f69-4c1b-8373-103fb2bc519e.mp4" width="100%" height="100%"> 
+https://user-images.githubusercontent.com/20625822/145051476-791e471e-d56b-4436-8f54-fb06b6ca1a6d.mp4
+
+
+ 
