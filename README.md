@@ -4,7 +4,7 @@
 
 The project goal is to implement a lane following method using Autorace 2020 challenge package. This repo contains only lane following packages of that repo with the code explanations.
 
-Some changes applied on the forked AutoRace package and in this file, the last version of the code is explained. If you would like to know more about the experiments we did, the results we obtained and how we ended up with this final version, please refer to the <b> presentation </b> found in this repo.
+Some changes applied on the forked AutoRace package and in this file, the last version of the code is explained. If you would like to know more about the experiments we did, the results we obtained and how we ended up with this final version, please refer to the <b> presentation link <https://1drv.ms/p/s!AlyP7yvWuEcHiJ8rQC3NYk-aNvp6ZA?e=3QpRkv> </b> 
 
 ## Hardware and Software Tools
 
@@ -20,6 +20,7 @@ TurtleBot3 Burger
 
 Camera calibration  
 Lane Detection using Turtlebot3
+Demo Video
 
 ## Camera Calibration
 
@@ -50,7 +51,10 @@ Determining intrinsic camera parameters of Turtlebot3 like focal lengths, princi
 
 Following commands should be run for this step:
 
-roscore  (<i>on remote pc </i>)    
+```bash
+roscore
+```  
+(<i>on remote pc </i>)    
 roslaunch turtlebot3_autorace_traffic_light_camera turtlebot3_
 autorace_camera_pi.launch  (<i>on robot</i>) 
 
@@ -263,5 +267,6 @@ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 The task of the control_lane.py is to publish velocity to the Turtlebot3 using cmd_vel topic where linear x speed is a constant and only angular z velocity is published to arrange the orientation of the robot to make it able to follow the calculated lane.
 
 
+## Demo Video
 
-
+<video src="https://user-images.githubusercontent.com/20625822/145048554-58cab438-4f69-4c1b-8373-103fb2bc519e.mp4" width="100%" height="100%"> 
